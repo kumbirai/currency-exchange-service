@@ -1,8 +1,7 @@
 package com.kumbirai.spring.microservices.currencyexchangeservice.controller.repository;
 
-import org.springframework.data.jpa.repository.JpaRepository;
-
 import com.kumbirai.spring.microservices.currencyexchangeservice.controller.bean.CurrencyExchange;
+import org.springframework.data.jpa.repository.JpaRepository;
 
 /**
  * <p><b>Purpose:</b><br>
@@ -12,14 +11,13 @@ import com.kumbirai.spring.microservices.currencyexchangeservice.controller.bean
  * <br>
  *
  * @author Kumbirai 'Coach' Mundangepfupfu<br>
- * @date 29 May 2021<br>
  * @version 1.0<br>
  *
  * <b>Revision:</b>
  * <br>
- *					
+ * @date 29 May 2021<br>
  */
 public interface CurrencyExchangeRepository extends JpaRepository<CurrencyExchange, Long>
 {
-	CurrencyExchange findByFromAndTo(String from, String to);
+    CurrencyExchange findByFromAndTo(String from, String to);
 }

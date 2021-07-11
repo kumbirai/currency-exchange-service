@@ -5,16 +5,15 @@
  */
 package com.kumbirai.spring.microservices.currencyexchangeservice.controller.bean;
 
-import java.math.BigDecimal;
-
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import java.math.BigDecimal;
 
 /**
  * <p><b>Purpose:</b><br>
@@ -24,12 +23,11 @@ import lombok.RequiredArgsConstructor;
  * <br>
  *
  * @author Kumbirai 'Coach' Mundangepfupfu<br>
- * @date 29 May 2021<br>
  * @version 1.0<br>
  *
  * <b>Revision:</b>
  * <br>
- *					
+ * @date 29 May 2021<br>
  */
 @Data
 @NoArgsConstructor
@@ -37,22 +35,22 @@ import lombok.RequiredArgsConstructor;
 @Entity
 public class CurrencyExchange
 {
-	@Id
-	@NonNull
-	private Long id;
+    @Id
+    @NonNull
+    private Long id;
 
-	@Column(name = "currency_from", length = 10)
-	@NonNull
-	private String from;
+    @Column(name = "currency_from", length = 10)
+    @NonNull
+    private String from;
 
-	@Column(name = "currency_to", length = 10)
-	@NonNull
-	private String to;
+    @Column(name = "currency_to", length = 10)
+    @NonNull
+    private String to;
 
-	@NonNull
-	@Column(scale = 10, precision = 6)
-	private BigDecimal conversionMultiple;
+    @NonNull
+    @Column(scale = 10, precision = 6)
+    private BigDecimal conversionMultiple;
 
-	@Column(length = 10)
-	private String environment;
+    @Column(length = 10)
+    private String environment;
 }
