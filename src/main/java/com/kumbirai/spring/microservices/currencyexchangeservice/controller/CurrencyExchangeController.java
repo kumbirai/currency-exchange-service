@@ -5,8 +5,8 @@
  */
 package com.kumbirai.spring.microservices.currencyexchangeservice.controller;
 
-import com.kumbirai.spring.microservices.currencyexchangeservice.controller.bean.CurrencyExchange;
-import com.kumbirai.spring.microservices.currencyexchangeservice.controller.repository.CurrencyExchangeRepository;
+import com.kumbirai.spring.microservices.currencyexchangeservice.bean.CurrencyExchange;
+import com.kumbirai.spring.microservices.currencyexchangeservice.repository.CurrencyExchangeRepository;
 import com.kumbirai.spring.microservices.currencyexchangeservice.exception.CurrencyExchangeException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -28,7 +28,6 @@ import org.springframework.web.bind.annotation.RestController;
  *
  * <b>Revision:</b>
  * <br>
- * @date 29 May 2021<br>
  */
 @RestController
 public class CurrencyExchangeController
@@ -56,9 +55,9 @@ public class CurrencyExchangeController
      * retrieveExchangeValue<br>
      * <br>
      *
-     * @param from
-     * @param to
-     * @return<br> <br>
+     * @param from - from currency
+     * @param to   - to currency
+     * @return <br> <br>
      */
     @GetMapping("/currency-exchange/from/{from}/to/{to}")
     public CurrencyExchange retrieveExchangeValue(@PathVariable String from, @PathVariable String to)

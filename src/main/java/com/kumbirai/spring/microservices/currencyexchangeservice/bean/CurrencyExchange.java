@@ -3,7 +3,7 @@
 
  All rights reserved.
  */
-package com.kumbirai.spring.microservices.currencyexchangeservice.controller.bean;
+package com.kumbirai.spring.microservices.currencyexchangeservice.bean;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -27,8 +27,8 @@ import java.math.BigDecimal;
  *
  * <b>Revision:</b>
  * <br>
- * @date 29 May 2021<br>
  */
+@SuppressWarnings("JpaDataSourceORMInspection")
 @Data
 @NoArgsConstructor
 @RequiredArgsConstructor

@@ -17,7 +17,6 @@ package com.kumbirai.spring.microservices.currencyexchangeservice.exception;
  *
  * <b>Revision:</b>
  * <br>
- * @date 29 May 2021<br>
  */
 public class CurrencyExchangeException extends RuntimeException
 {

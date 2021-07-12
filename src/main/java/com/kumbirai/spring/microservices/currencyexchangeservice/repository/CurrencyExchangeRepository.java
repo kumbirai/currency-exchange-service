@@ -1,4 +1,4 @@
-package com.kumbirai.spring.microservices.currencyexchangeservice.controller.repository;
+package com.kumbirai.spring.microservices.currencyexchangeservice.repository;
 
 import com.kumbirai.spring.microservices.currencyexchangeservice.controller.bean.CurrencyExchange;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -15,7 +15,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
  *
  * <b>Revision:</b>
  * <br>
- * @date 29 May 2021<br>
  */
 public interface CurrencyExchangeRepository extends JpaRepository<CurrencyExchange, Long>
 {
