@@ -1,6 +1,6 @@
 package com.kumbirai.spring.microservices.currencyexchangeservice.repository;
 
-import com.kumbirai.spring.microservices.currencyexchangeservice.controller.bean.CurrencyExchange;
+import com.kumbirai.spring.microservices.currencyexchangeservice.bean.CurrencyExchange;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**
